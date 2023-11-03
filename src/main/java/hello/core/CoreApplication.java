@@ -8,7 +8,7 @@ public class CoreApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CoreApplication.class, args);
-		System.out.println("커밋 테스트");
+		System.out.println("커밋 테스트1");
 	}
 
 }
