@@ -12,7 +12,7 @@ public class MemberServiseTest {
         //given 주어졌을때
         Member member = new Member(1L, "memberA", Grade.VIP);
 
-        //when 이렇게 했을대
+        //when 이렇게 했을때
         memberService.join(member);
         Member findMember = memberService.findMember(1L); //회원아이디
 
