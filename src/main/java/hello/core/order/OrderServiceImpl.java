@@ -6,7 +6,7 @@ import hello.core.member.MemberRepository;
 import hello.core.member.MemoryMemberRepository;
 
 //주문 서비스 구현체
-public class OrderServiceImpl implements OrderService{
+public class OrderServiceImpl implements OrderService{ //OrderServiceImpl 상위에 OrderService가 있음
     //OerderService는 할인은 난 몰라 ! 결과만 나에게 던져줘 => 단일체계원칙
     
     //OerderService는 두개 필요
@@ -14,8 +14,8 @@ public class OrderServiceImpl implements OrderService{
     //2. 고정 할인 정책
     //
     // private final MemberRepository memberRepository = new MemoryMemberRepository();
-    private final MemberRepository memberRepository;
-    private final DiscountPolicy discountPolicy;
+    private final MemberRepository memberRepository; //참조
+    private final DiscountPolicy discountPolicy; //참조
 
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
